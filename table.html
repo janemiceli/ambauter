@@ -1,0 +1,127 @@
+<html>
+ <head>
+  <title>
+   Table
+  </title>
+ </head>
+ <BODY background="stars.jpg" bgproperties="fixed">
+
+<FONT COLOR="#ffffff">
+  
+<table align="left" width="150"> 
+<TR> <FONT COLOR="#ffffff"> <b>Random Sh**:</b> </f> </tr>
+<br>
+<TR> <address> <a href="http://www.uwm.edu/~ambauter/"> <b>Home </b></a> </tr>
+<br>
+<TR> <address> <a href="http://www.livejournal.com/users/purplenexus/"> <b>My Live Journal</b></a> </tr>
+<br>
+<TR> <address> <a href="http://www.uwm.edu/~ambauter/table.html">  <b>My Schedule</b></a> </tr>
+<br>
+<TR> <address> <a href="http://www.uwm.edu/~mjbauter"> <b>My sister's website </b></a> </tr>
+<br>
+<TR> <address> <a href="http://www.uwm.edu/~ambauter/carp.html"> <b>The Holy Carp </b> </a> </tr>
+<br>
+<TR> <address> <a href="http://www.uwm.edu/~ambauter/Links.html"> <b>Links </b> </a> </tr>
+<br>
+<TR> <address> <a href="http://www.uwm.edu/~ambauter/Smoke.html"> <b>Smoking</b> </a> </tr>
+<br>
+<TR> <address> <a href="http://www.uwm.edu/~ambauter/Art.html"> <b>Artless in Milwaukee</b> </a> </tr>
+<br>
+<tr> <address> <a href="http://www.freegb.net/gbook.cgi?55160"> My Guestbook! </b> </a> </address> </TR>
+</table>
+
+
+  <h1>
+   Summer Schedule
+  </h1>
+
+ <P> last updated 5/11/04 <P>
+
+<TABLE align="top" Border="3" Cellpadding="2" Cellspacing="2">
+<TR>  <TH> <FONT COLOR="#ffffff"> Monday  </f>  </TH>            <TH><FONT COLOR="#ffffff">Tuesday</TH>      <TH><FONT COLOR="#ffffff">Wednesday</TH>     <TH><FONT COLOR="#ffffff"> Thursday</TH> <TH><FONT COLOR="#ffffff"> 
+<TR>  <TD><FONT COLOR="#ffffff"> World History Since 1500, <br>9:00AM - 11:35AM, <br>6/01-6/26 <TD><FONT COLOR="#ffffff"> World History Since 1500, <br>9:00AM - 11:35AM, <br>6/01-6/26</TD>        <TD><FONT COLOR="#ffffff"> World History Since 1500, <br>9:00AM - 11:35AM, <br>6/01-6/26</TD> <TD><FONT COLOR="#ffffff"> World History Since 1500, <br>9:00AM - 11:35AM, <br>6/01-6/26</TD> 
+<TR>  <TD></TD>                  <TD><FONT COLOR="#ffffff"> Intro Computr Org/Assmbly Lang Lecture, <br>12:30PM - 3:20PM, <br>6/01-7/10 </TD> <TD><FONT COLOR="#ffffff"></TD> <TD><FONT COLOR="#ffffff"> Intro Computr Org/Assmbly Lang Lecture, <br>12:30PM - 3:20PM, <br>6/01-7/10 </TD>      </TR> 
+<tr> <P align="bottom">  Alas, no Gen Con this year </P> </tr>
+</table>
+<br>
+ 
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script is for scrolling text -->
+<!-- Begin
+
+msg='Two pounds of insanity in a one pound bag';
+font='Verdana,Arial'; //font type
+size=2; //font size.. it'd be gross too big
+color='#8B0000';  
+speed=0.5;
+
+//Alter nothing past here!!
+ns=(document.layers);
+ie=(document.all);
+msg=msg.split('');
+n=msg.length;
+a=size*10;
+ymouse=0;
+xmouse=0;
+scrll=0;
+props="<font face="+font+" size="+size+" color="+color+">";
+if (ns){
+for (i=0; i < n; i++)
+document.write('<layer name="nsmsg'+i+'" top=0 left=0 height='+a+' width='+a+'><center>'+props+msg[i]+'</font></center></layer>');
+}
+if (ie){
+document.write('<div id="outer" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < n; i++)
+document.write('<div id="iemsg" style="position:absolute;top:0px;left:0;height:'+a+';width:'+a+';text-align:center">'+props+msg[i]+'</font></div>');
+document.write('</div></div>');
+}
+(ns)?window.captureEvents(Event.MOUSEMOVE):0;
+function Mouse(evnt){
+ymouse = (ns)?evnt.pageY+20-(window.pageYOffset):event.y+20;
+xmouse = (ns)?evnt.pageX+20:event.x+20;
+}
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+y=new Array();
+x=new Array();
+Y=new Array();
+X=new Array();
+for (i=0; i < n; i++){
+y[i]=0;
+x[i]=0;
+Y[i]=0;
+X[i]=0;
+}
+function assign(){
+if (ie) outer.style.top=document.body.scrollTop;
+for (i=0; i < n; i++){
+ var d=(ns)?document.layers['nsmsg'+i]:iemsg[i].style;
+ d.top=y[i]+scrll;
+ d.left=x[i]+(i*(a/2));
+ }
+}
+function ripple(){
+scrll=(ns)?window.pageYOffset:0;
+y[0]=Math.round(Y[0]+=((ymouse)-Y[0])*speed);
+x[0]=Math.round(X[0]+=((xmouse)-X[0])*speed);
+for (var i=1; i < n; i++){
+y[i]=Math.round(Y[i]+=(y[i-1]-Y[i])*speed);
+x[i]=Math.round(X[i]+=(x[i-1]-X[i])*speed);
+}
+assign();
+setTimeout('ripple()',10);
+}
+if (ns||ie)window.onload=ripple;
+//  End -->
+
+</script>
+
+
+
+</body>   
+
+<p> Yes, the lectures are optional. Graduation is also optional. -George Foreman</p> 
+</f>
+</html>

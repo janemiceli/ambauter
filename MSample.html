@@ -1,0 +1,276 @@
+
+<html>
+
+<meta name="robots" content="index, follow, noimageclick, noimageindex" /> 
+ <head>
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+  <title>
+     My Designs
+  </title>
+ </head>
+
+ <BODY>
+
+
+<script language="JavaScript"> 
+<!-- 
+stop=1; 
+function IE1(){ 
+if(event.button==2){ } 
+} 
+// mouse right-click stopped in Internet Explorer 4+ 
+function IE2(){ 
+if((event.keyCode==121 && event.shiftKey==true) ¦¦ event.keyCode==93){ } 
+} 
+// The use of Shift-F10 and the 'Context Menu' key stopped in Internet Explorer 4+ 
+function IE3(){ 
+event.cancelBubble=true; 
+event.returnValue=false; 
+} 
+// The famous mouse double-click getaround stopped in Internet Explorer 4+ 
+function IE4(){ 
+if(stop==1){ 
+event.returnValue=false; 
+} 
+} 
+// Page content selection stopped in Internet Explorer 4+ 
+function NN1(e){ 
+if(e.which==3){return false;} 
+} 
+// mouse right-clicks, Shift-F10, and the 'Context Menu' key stopped in Netscape 3+ 
+function NN2(){ 
+if(stop==1){ 
+return false; 
+} 
+} 
+// Page content selection stopped in Netscape 3+ 
+if(document.layers){ 
+window.captureEvents(Event.mouseDOWN); 
+window.onmousedown=NN1; 
+window.onselectstart=NN2; 
+} 
+if(document.all){ 
+document.onmousedown=IE1; 
+document.onkeydown=IE2; 
+document.oncontextmenu=IE3; 
+document.onselectstart=IE4; 
+} 
+//--> 
+</script> 
+
+
+
+<FONT COLOR="#000066">
+
+<center> <p><h2>A few examples...</h2> <br> I will add more as I finish (Last updated 8/2/04)</p>
+<br>
+<p align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Keep in mind:</b> Colors can be changed, fonts as well;  
+Images can be added, cut out, and resized.  Don't forget that I'm
+ willing to try and stick your photos in any of these. </p>
+<br>
+<br>
+<table width=650 CELLPADDING="3" CELLSPACING="3" border="5" ALIGN="middle">
+<tr> 
+<td ALIGN="middle"> <img src="ERN1.jpg"> <p>Beach wedding?</p> </td>
+<td ALIGN="middle"> <img src="ERN2.jpg"> <p>This design come out of the desire to deviate from a boring calender!</p> </td>
+</tr>
+<tr> 
+<td ALIGN="middle"> <img src="ERN3.jpg"> <p>Not overly complicated or colorful (unless you want me to change that), but tasteful.</p> </td>
+<td ALIGN="middle"> <img src="ERN4.jpg"> <p> Original heart, reminiscent of Celtic hearts.</p> </td>
+<tr>
+</tr>
+</table>
+<br>
+<table ALIGN="middle" border="5">
+<td ALIGN="middle"><img src="ERN5.jpg"> <p>Simple, but nice, birthday invitation.</p></td>
+<td ALIGN="middle"><img src="ERN6.jpg"> <p>Photo background</p> </td>
+</table>
+<br>
+<br>
+<p> <a href="http://www.uwm.edu/~ambauter/MInProg.html" TARGET="Mindex"> Take a look at what is in the works.</a> </p>
+<p> <a href="http://www.uwm.edu/~ambauter/Mindex.html" TARGET="Mindex"> Back to front page.</a> </p>
+
+
+<bottom>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Note that the 'AB's will not be in the final product;  They are watermarks. </P>
+</bottom>
+</f>
+
+
+
+
+
+
+
+
+
+
+
+
+<script language=JavaScript>
+<!--
+  if (document.all)
+    document.onselectstart =
+      function () { return false; };
+// --> 
+</script>
+
+<script language=JavaScript>
+<!--
+  if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown =
+      function (evt) {
+        return false;
+      };
+  }
+// --> 
+</script>
+
+<script language=JavaScript>
+<!--
+  document.onmousedown =
+    function () { return false; };
+// --> 
+</script>
+
+<script language=JavaScript>
+<!--
+selector {-moz-user-select:none;}
+
+// --> 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="Sorry, no right clicking;  It's dangerous to an artist's health.";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script is for scrolling text -->
+<!-- Begin
+
+msg='Welcome to a few options in Save The Date magnets and cards.';
+font='Verdana,Arial'; //font type
+size=2; //font size.. it'd be gross too big
+color='#CC99CC';  
+speed=0.5;
+
+//Alter nothing past here!!
+ns=(document.layers);
+ie=(document.all);
+msg=msg.split('');
+n=msg.length;
+a=size*10;
+ymouse=0;
+xmouse=0;
+scrll=0;
+props="<font face="+font+" size="+size+" color="+color+">";
+if (ns){
+for (i=0; i < n; i++)
+document.write('<layer name="nsmsg'+i+'" top=0 left=0 height='+a+' width='+a+'><center>'+props+msg[i]+'</font></center></layer>');
+}
+if (ie){
+document.write('<div id="outer" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < n; i++)
+document.write('<div id="iemsg" style="position:absolute;top:0px;left:0;height:'+a+';width:'+a+';text-align:center">'+props+msg[i]+'</font></div>');
+document.write('</div></div>');
+}
+(ns)?window.captureEvents(Event.MOUSEMOVE):0;
+function Mouse(evnt){
+ymouse = (ns)?evnt.pageY+20-(window.pageYOffset):event.y+20;
+xmouse = (ns)?evnt.pageX+20:event.x+20;
+}
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+y=new Array();
+x=new Array();
+Y=new Array();
+X=new Array();
+for (i=0; i < n; i++){
+y[i]=0;
+x[i]=0;
+Y[i]=0;
+X[i]=0;
+}
+function assign(){
+if (ie) outer.style.top=document.body.scrollTop;
+for (i=0; i < n; i++){
+ var d=(ns)?document.layers['nsmsg'+i]:iemsg[i].style;
+ d.top=y[i]+scrll;
+ d.left=x[i]+(i*(a/2));
+ }
+}
+function ripple(){
+scrll=(ns)?window.pageYOffset:0;
+y[0]=Math.round(Y[0]+=((ymouse)-Y[0])*speed);
+x[0]=Math.round(X[0]+=((xmouse)-X[0])*speed);
+for (var i=1; i < n; i++){
+y[i]=Math.round(Y[i]+=(y[i-1]-Y[i])*speed);
+x[i]=Math.round(X[i]+=(x[i-1]-X[i])*speed);
+}
+assign();
+setTimeout('ripple()',10);
+}
+if (ns||ie)window.onload=ripple;
+//  End -->
+
+</script>
+
+<hr>
+<p> Copyright 7/30/04 by Angela Bauter </p>
+
+ </body>
+
+</html>
